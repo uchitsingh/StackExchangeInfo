@@ -1,12 +1,13 @@
-package com.example.stackexchangeinfo
+package com.example.stackexchangeinfo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.stackexchangeinfo.R
 
-class MainActivity : AppCompatActivity() {
+class UserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_user)
     }
 }
