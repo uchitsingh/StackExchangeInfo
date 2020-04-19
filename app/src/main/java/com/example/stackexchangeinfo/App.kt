@@ -6,14 +6,14 @@ import com.example.stackexchangeinfo.dagger.AppModule
 import com.example.stackexchangeinfo.dagger.DaggerAppComponent
 import timber.log.Timber
 
-class App: Application() {
+class App : Application() {
 
-    private lateinit var appComponent: AppComponent
+    lateinit var appComponent: AppComponent
 
     override fun onCreate() {
         super.onCreate()
-        appComponent = initDagger()
         Timber.plant(Timber.DebugTree())
+        appComponent = initDagger()
     }
 
     private fun initDagger(): AppComponent =
